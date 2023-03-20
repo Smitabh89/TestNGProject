@@ -38,12 +38,14 @@ public class HomePageTest extends Baseclass
 			String actual=home.VerifyTitle();
 			//String expected="QA/QE/SDET Training.";
 			Assert.assertEquals(actual, "Training");
+			System.out.println("In the Testtitle test case");
 		}
 		@Test(priority=2)
 		public void testLogo()
 		{
 			boolean logo=home.VerifyLogo();
 			Assert.assertTrue(logo);
+			System.out.println("In the testLogo");
 			
 		}
 		@Test(priority=3)
