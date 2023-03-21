@@ -37,6 +37,7 @@ public class LandingPageTest extends Baseclass
    {
 	   boolean home2=land.VerifyHome();
 	   Assert.assertTrue(true);
+	   System.out.println("In the Testhome");
 	return home2;
    }
    
