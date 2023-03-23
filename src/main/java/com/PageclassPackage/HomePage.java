@@ -51,6 +51,13 @@ public class HomePage extends Baseclass
 		Login.click();	
 		return new LoginPage();
 	}
+	
+	public RegisterPage verifyRegisterPage() throws IOException
+	{
+		Login.click();	
+		System.out.println("Registration Page open");
+		return new RegisterPage();
+	}
 
 
 }

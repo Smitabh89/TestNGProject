@@ -15,9 +15,11 @@ import com.PageclassPackage.LoginPage;
 
 
 
+
+
 public class LoginPageTest extends Baseclass
 {
-	HomePage home;
+	 HomePage home;
 	 LoginPage Login;
 	 LandingPage Land;
 
@@ -49,14 +51,14 @@ public class LoginPageTest extends Baseclass
 	@Test(priority=2)
 	public void LoginTest()
 	{
-		Land=Login.loginMethod(Prop.getProperty("username"), Prop.getProperty("password"));
+		Land=Login.loginMethod(Prop.getProperty("username"),Prop.getProperty("password"));
 	}
 	@AfterMethod
 	public void Browserclose()
 	{
 		driver.quit();
-		
 	}
 	
+
 
 }

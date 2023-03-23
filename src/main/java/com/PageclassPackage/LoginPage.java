@@ -53,6 +53,14 @@ public class LoginPage extends Baseclass
 		logger.info("Clicking on the page");
 		return new LandingPage();
 	}
+	
+	public LandingPage registermethod()
+	{
+		register.click();
+		logger.info("Clicking on the page");
+		return new LandingPage();
+	}
+	
 
 
 }

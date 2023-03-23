@@ -8,7 +8,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.PageTestPackage.HomePageTest"/>
-      <class name="com.PageTestPackage.LoginPageTest"/>
+      <class name="com.PageTestPackage.RegisterPageTest"/>
+      
      
     </classes>
   </test> <!-- Test -->

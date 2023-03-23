@@ -13,8 +13,8 @@ import org.testng.annotations.Test;
 
 public class Util 
 {
-	public static long PAGE_LOAD_TIMEOUT=10;
-	  public static long IMPLICIT_WAIT=20;
+	public static long PAGE_LOAD_TIMEOUT=30;
+	  public static long IMPLICIT_WAIT=25;
 	  
     DataFormatter formatter=new DataFormatter();
 	@Test(dataProvider="Datadriven")

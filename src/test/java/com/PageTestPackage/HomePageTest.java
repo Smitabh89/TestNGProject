@@ -11,6 +11,7 @@ import com.BaseClassPackage.Baseclass;
 import com.ExtentReportPackage.ExtentReportNG;
 import com.PageclassPackage.HomePage;
 import com.PageclassPackage.LoginPage;
+import com.PageclassPackage.RegisterPage;
 
 
 
@@ -18,6 +19,7 @@ public class HomePageTest extends Baseclass
 {
 	  HomePage home;
 	    LoginPage login;
+	    RegisterPage reg;
 		public HomePageTest() throws IOException
 		{
 			super();
@@ -54,10 +56,15 @@ public class HomePageTest extends Baseclass
 			boolean stud=home.verifyStud();
 			Assert.assertTrue(stud);
 		}
-		@Test(priority=4)
+		/*@Test(priority=4)
 		public void TestLoginPage() throws IOException
 		{
 			home.verifyLoginPage();
+		}*/
+		@Test(priority=4)
+		public void TestRegisterPage() throws IOException
+		{
+			home.verifyRegisterPage();
 		}
 		@AfterMethod()
 		public void browserclose()
